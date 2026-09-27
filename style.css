@@ -1,7 +1,5 @@
-/* Import clean modern font */
 @import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@400;600;700;800&display=swap');
 
-/* Basic Reset */
 * {
     margin: 0;
     padding: 0;
@@ -22,14 +20,12 @@ body {
     padding: 90px 24px 80px;
 }
 
-/* Home Page Full Viewport Layout */
 body.home-page {
     max-width: 100%;
     margin: 0;
     padding: 0;
 }
 
-/* Floating Navigation Bar */
 .nav-bar {
     position: fixed;
     top: 20px;
@@ -68,7 +64,6 @@ body.home-page {
     color: #ffffff;
 }
 
-/* Full Viewport Hero Screen (index.html) */
 .hero-screen {
     position: relative;
     width: 100%;
@@ -110,7 +105,7 @@ body.home-page {
     align-items: center;
     text-align: center;
     margin-top: auto;
-    margin-bottom: auto;
+    margin-bottom: 90px;
 }
 
 .hero-role {
@@ -120,8 +115,7 @@ body.home-page {
     letter-spacing: 0.12em;
     color: #f5efe6;
     opacity: 0.95;
-    /* margin-bottom: 12px; */
-    margin-top: 750px;
+    margin: 0 0 12px;
     text-shadow: 0 2px 8px rgba(0, 0, 0, 0.7);
 }
 
@@ -134,6 +128,7 @@ body.home-page {
     text-shadow: 0 2px 14px rgba(0, 0, 0, 0.6);
     margin: 0;
 }
+
 
 .scroll-indicator {
     position: absolute;
@@ -172,7 +167,6 @@ body.home-page {
     transform: translateY(3px);
 }
 
-/* Intro Section (Reached on Scroll Down) */
 .intro-section {
     max-width: 800px;
     margin: 0 auto;
@@ -193,7 +187,6 @@ body.home-page {
 }
 
 #intro {
-    /* font-size: 1.18rem; */
     font-size: 30px;
     font-family: 'Montserrat', sans-serif;    
     color: #554e43;
@@ -202,7 +195,6 @@ body.home-page {
     max-width: 720px;
 }
 
-/* Call to Action Buttons */
 .btn-group {
     display: flex;
     gap: 12px;
@@ -227,7 +219,6 @@ button:hover {
     color: #2d2a24;
 }
 
-/* Secondary Button ("Download Resume") */
 button:nth-of-type(2) {
     background-color: transparent;
     color: #2d2a24;
@@ -238,7 +229,6 @@ button:nth-of-type(2):hover {
     color: #f5efe6;
 }
 
-/* Projects Page Header */
 .projects-header {
     display: flex;
     justify-content: space-between;
@@ -253,15 +243,7 @@ button:nth-of-type(2):hover {
     letter-spacing: -0.5px;
 }
 
-/* .scroll-hint {
-    font-size: 13px;
-    font-weight: 700;
-    color: #8c8273;
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
-} */
 
-/* Projects Horizontal Card Scroll Container */
 .projects {
     display: flex;
     flex-direction: row;
@@ -275,7 +257,6 @@ button:nth-of-type(2):hover {
     scrollbar-color: #cfc2af transparent;
 }
 
-/* Custom Scrollbar for horizontal scrolling */
 .projects::-webkit-scrollbar {
     height: 6px;
 }
@@ -294,7 +275,6 @@ button:nth-of-type(2):hover {
     background: #2d2a24;
 }
 
-/* Project Cards */
 .projects > div {
     flex: 0 0 360px;
     max-width: 85vw;
@@ -308,7 +288,6 @@ button:nth-of-type(2):hover {
     justify-content: space-between;
     transition: transform 0.2s ease, background-color 0.2s ease, border-color 0.2s ease;
     
-    /* Animation with Staggered Entrance Delays */
     opacity: 0;
     transform: translateY(20px);
     animation: cardSlideUp 0.5s ease forwards;
@@ -320,7 +299,6 @@ button:nth-of-type(2):hover {
     transform: translateY(-4px);
 }
 
-/* Staggered Animation Delay for Each Project Card */
 .projects > div:nth-child(1) { animation-delay: 0.1s; }
 .projects > div:nth-child(2) { animation-delay: 0.25s; }
 .projects > div:nth-child(3) { animation-delay: 0.4s; }
@@ -353,7 +331,6 @@ button:nth-of-type(2):hover {
     margin-bottom: 16px;
 }
 
-/* Tech Stack Tags */
 .tech-stack ul {
     list-style: none;
     display: flex;
@@ -372,7 +349,6 @@ button:nth-of-type(2):hover {
     border-radius: 15px;
 }
 
-/* Project Links */
 .projects > div a {
     display: inline-block;
     text-decoration: none;
@@ -393,7 +369,6 @@ button:nth-of-type(2):hover {
     color: #2d2a24;
 }
 
-/* Contact Page */
 .contact-links {
     display: flex;
     flex-direction: row;
@@ -425,7 +400,6 @@ button:nth-of-type(2):hover {
     border-color: #2d2a24;
 }
 
-/* Responsive - Mobile Friendly */
 @media (max-width: 600px) {
     body:not(.home-page) {
         padding: 80px 16px 60px;
